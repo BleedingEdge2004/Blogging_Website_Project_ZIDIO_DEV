@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div className="nav-left">
-        <Link to="/" className="brand">Zidio Blog</Link>
+        <Link to="/" className="brand">Blogging Page </Link>
       </div>
       <button
         className="menu-toggle"

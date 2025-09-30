@@ -52,18 +52,18 @@ export default function PostDetailsPage() {
       <div>By {post.author?.name}</div>
       {post.image && <img src={post.image} alt={post.title} style={{ maxWidth: "100%" }} />}
       <div dangerouslySetInnerHTML={{ __html: post.content }} />
-      <div>
+      <div className="like-section">
         <button onClick={toggleLike}>Like ({post.likes?.length || 0})</button>
       </div>
 
-      <section>
+      <section className="comments-section">
         <h3>Comments</h3>
         <form onSubmit={addComment}>
           <textarea value={commentText} onChange={(e) => setCommentText(e.target.value)} required />
           <button type="submit">Add Comment</button>
         </form>
 
-        <ul>
+        <ul className="comments-list">
           {(post.comments || []).map((c) => (
             <li key={c._id}>{c.text} — <small>{c.user?.name || "User"}</small></li>
           ))}

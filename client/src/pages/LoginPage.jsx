@@ -24,14 +24,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div>
+    <div className="login-page">
       <h1>Login</h1>
-      <form onSubmit={submit}>
+      <form className="form" onSubmit={submit}>
         <label>Email</label>
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" required />
         <label>Password</label>
         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" required />
-        <button type="submit">Login</button>
+        <button className="btn-primary" type="submit">Login</button> 
       </form>
       <div className="dont-have-account">
                 Don't have an Account ?<br></br> Create a New Account{" "}

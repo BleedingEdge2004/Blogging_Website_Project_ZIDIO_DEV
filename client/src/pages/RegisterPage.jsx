@@ -62,7 +62,7 @@ export default function RegisterPage() {
 
     return (
         <div className="register-page container">
-            <h1>Create an Account</h1>
+            <h1>Create an Account</h1> 
 
             {error && <div className="error-message" role="alert">{error}</div>}
 
@@ -70,7 +70,7 @@ export default function RegisterPage() {
                 <p id="register-desc" className="sr-only">
                     Register to create, edit and comment on posts.
                 </p>
-
+ 
                 <label htmlFor="name">Full name</label>
                 <input
                     id="name"

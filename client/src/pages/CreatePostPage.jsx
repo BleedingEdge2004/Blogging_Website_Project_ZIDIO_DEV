@@ -21,9 +21,10 @@ export default function CreatePostPage() {
   };
 
   return (
-    <div>
+    <div className="create-post-page">
+    <div className="create-post-card">
       <h1>Create Post</h1>
-      <form onSubmit={submit}>
+      <form onSubmit={submit} >
         <label>Title</label>
         <input value={title} onChange={(e) => setTitle(e.target.value)} required />
 
@@ -35,6 +36,7 @@ export default function CreatePostPage() {
 
         <button type="submit">Publish</button>
       </form>
+    </div>
     </div>
   );
 }
