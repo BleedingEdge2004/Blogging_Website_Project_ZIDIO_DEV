@@ -1,0 +1,83 @@
+.create-post-page {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #87ceeb, #2e8b57);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.create-post-card {
+  background: #ffffffee; 
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.create-post-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2e8b57;
+}
+
+/* Form styles */
+.create-post-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-post-card label {
+  font-weight: 500;
+  color: #333;
+}
+
+.create-post-card input,
+.create-post-card textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.create-post-card textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.create-post-card input:focus,
+.create-post-card textarea:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.4);
+}
+
+/* Submit button */
+.create-post-card button {
+  background: #2e8b57;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.create-post-card button:hover {
+  background: #256d4a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .create-post-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .create-post-card h1 {
+    font-size: 1.5rem;
+  }
+}

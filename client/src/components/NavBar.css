@@ -1,0 +1,90 @@
+.navbar {
+  background: linear-gradient(135deg, #87ceeb, #2e8b57);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.nav-right a:hover {
+  opacity: 0.8;
+}
+
+.btn-logout {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-logout:hover {
+  background: #c82333;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ffffffee;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 12px;
+    width: 200px;
+    border-radius: 0 0 0 12px;
+    display: none;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .nav-right a,
+  .btn-logout {
+    color: #2e8b57;
+  }
+}
