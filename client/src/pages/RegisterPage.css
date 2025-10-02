@@ -88,12 +88,19 @@
 }
 
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .register-page h1 {
     font-size: 1.5rem;
   }
 
+  .register-page{
+    flex-flow:column;
+    align-items:center;
+    justify-content:center;
+  }
+
   .register-page .form {
+    width: 70%;
     padding: 20px;
     border-radius: 12px;
   }

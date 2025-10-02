@@ -95,6 +95,7 @@
   }
 
   .login-page .form {
+    width:70%;
     padding: 20px;
     border-radius: 12px;
   }

@@ -29,18 +29,18 @@ export default function NavBar() {
         ☰
       </button>
 
-      <div className={`nav-right ${menuOpen ? "open" : ""}`}>
-        <Link to="/">Home</Link>
+      <div className={`nav-right ${menuOpen ? 'open' : ''}`}>
+        <Link to="/" className="text-clr">Home</Link>
         {token ? (
           <>
-            <Link to="/create">Create</Link>
-            <Link to="/profile">{name || "Profile"}</Link>
+            <Link to="/create" className="text-clr">Create</Link>
+            <Link to="/profile" className="text-clr">{name || "Profile"}</Link>
             <button className="btn-logout" onClick={handleLogout}>Logout</button>
           </>
         ) : (
           <>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/login" className="text-clr">Login</Link>
+            <Link to="/register" className="text-clr">Register</Link>
           </>
         )}
       </div>
